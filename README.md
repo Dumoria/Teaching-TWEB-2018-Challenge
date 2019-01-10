@@ -67,6 +67,16 @@ Cette requête retourne la première page de résultats (à savoir, les 20 films
 }
 ```
 
+Pour construire le lien de l’image de couverture d’un film, vous utiliserez la propriété poster_path en ajoutant l’url de base https://image.tmdb.org/t/p/w500/ au début:
+
+```
+// Construction de l'url
+const posterUrl = `https://image.tmdb.org/t/p/w500/${movie.poster_path}`;
+
+// Example d'utilisation (JSX)
+<img src={posterUrl} alt={movie.title} height={200} width="auto" />
+```
+
 Si vous souhaitez Apollo GraphQL, il existe une version GraphQL de l'API ici : https://graphql-tmdb.herokuapp.com/.
 
 Dans ce cas, vous devez mettre votre api key dans le header `Authorization` de vos requêtes, comme dans l'exemple qui suit :
