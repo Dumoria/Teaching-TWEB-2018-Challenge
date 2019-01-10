@@ -107,7 +107,7 @@ const httpLink = createHttpLink({
 Vous allez devoir ici créer une deuxième vue affichant la liste des films prochainement en salles. Il doit être possible de naviguer entre les deux vues. Ces informations sont accesibles via l'endpoint suivant:
 
 ```
-https://api.themoviedb.org/3/movie/upcoming?page=1?api_key=<YOUR_API_KEY>
+https://api.themoviedb.org/3/movie/upcoming?page=1&api_key=<YOUR_API_KEY>
 ```
 
 La réponse à cette requête est similaire à celle de l'endpoint `/movie/popular`.
